@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a Master of Health Informatics student in the Institute of Health Policy, Management and Evaluation (IHPME), Dalla Lana School of Public Health (DLSPH), University of Toronto. I am training as a health informatician to lead organizational and health system change through combining expertise in health systems with information and communication technologies. I strive to develop new skills and improve myself as a professional.
+
+I majored in Cognitive Sciecne at <a href="https://www.mcgill.ca/">McGill University</a>.
 
 ### More Information
 
