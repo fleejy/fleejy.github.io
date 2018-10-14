@@ -10,15 +10,17 @@ I majored in Cognitive Sciecne at <a href="https://www.mcgill.ca/">McGill Univer
 
 ### More Information
 
-![jinju.png](/images/jinju.png "Jinju, South Korea"){: .center-image, width="200px"}
-###### Jinju, South Korea{: .center}
-![j-light.jpg](/images/j-light.jpg "Jinju Namgang Yudeung Festival"){: .center-image, width="300px"}
+![jinju.png](/images/jinju.png "Jinju, South Korea"){: .center-image width="300px"}
+
+###### Jinju, South Korea
+{: .center}
+![j-light.jpg](/images/j-light.jpg "Jinju Namgang Yudeung Festival"){: .center-image width="400px"}
 ###### Jinju Namgang Yudeung Festival
 {: .center}
 
 I was born in Jinju, South Korea. In 2003, my family immigrated to Canada and I grew up in Coquitlam, British Columbia. Following the footsteps of my siblings, I moved to Montréal for university.
 
-![lafarge.jpg](/images/lafarge.jpg "Lafarge Lake"){: .center-image, width="300px"}
+![lafarge.jpg](/images/lafarge.jpg "Lafarge Lake"){: .center-image width="400px"}
 ###### Lafarge Lake in Coquitlam, BC
 {: .center}
 
