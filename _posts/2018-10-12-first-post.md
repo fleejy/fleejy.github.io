@@ -25,4 +25,4 @@ So why is flow so important? I think the difference between good and great (ofte
 
 So far, the courses are fruitful in helping me develop that foresight.
 
-![Toronto_Ontario.jpg](/images/Toronto_Ontario.jpg)
+![Toronto_Ontario.jpg](/images/Toronto_Ontario.jpg){: .center-image}
