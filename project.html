@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+{% if site.projects.size == 0 %}
+  <h2>No project found</h2>
+{% endif %}
+
+<div class="projects">
+  {% for project in paginator.projects %}
+    <article class="project">
+      <h1>
+        <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+      </h1>
+
+      <div clsss="meta">
+        <span class="date">
+          {{ project.date | date: "%Y-%m-%d" }}
+        </span>
+
+        <ul class="tag">
+          {% for tag in project.tags %}
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
+              {{ tag }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="entry">
+        {{ project.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ project.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <span class="prev">
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
+        &#xE000; Previous
+      </a>
+    </span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <span class="next">
+      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
+        Next &#xE001;
+      </a>
+    </span>
+  {% endif %}
+</div>
