@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CKME 136 Project"
-tags: [project, style]
+tags: [test, style]
 comments: true
 ---
 
