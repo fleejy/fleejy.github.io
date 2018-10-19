@@ -19,6 +19,7 @@ I didn't realize until one of my information courses that there was a whole disc
 
 On a side note, I have a fond memory of my first year biology course:
 > "How do cells know when to stop dividing? They are sensitive to concentration of certain particles. Concentration comes with accumulation. Accumulation comes with time."
+
 This particular progression of time-dependent flow was fascinating to me. Ever since then and whenever I become impatient, I remind myself of the time-dependency in many facets of life.
 
 So why is flow so important? I think the difference between good and great (often we fail to recognize the difference) stems from how well the process was designed with the process flow in consideration. My biggest weakness is impatience which manifests itself through shortsightedness. Without patience, there cannot exist foresight which is an essential characteristic of a professional who can optimize flows.
