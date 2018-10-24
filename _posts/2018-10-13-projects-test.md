@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "CKME 136 Project"
-tags: [test, style]
-comments: true
+tags:
+  - blog
+  - health informatics
+  - projects
 ---
 
 Below is just about everything I did for the CKME 136 project.
