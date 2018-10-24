@@ -2,7 +2,6 @@
 layout: post
 title: "CKME 136 Project"
 tags:
-  - blog
   - health informatics
   - projects
 ---
