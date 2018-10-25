@@ -21,7 +21,7 @@ avatar: /images/favicon-96x96.png
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
   - name: About
-    url: /About
+    url: /about
   - name: Blog
     url: /blog
   - name: Tags
