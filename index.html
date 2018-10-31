@@ -31,65 +31,10 @@
       <!-- Add Google Analytics -->
       <!-- End Google Analytics --> 
       <!-- Begin Background --> 
-      <canvas width="440" height="440" ></canvas>
-      <script>
-         /* https://github.com/d3/d3-timer Copyright 2015 Mike Bostock */
-         "undefined"==typeof requestAnimationFrame&&(requestAnimationFrame="undefined"!=typeof window&&(window.msRequestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame)||function(e){return setTimeout(e,17)}),function(e,n){"object"==typeof exports&&"undefined"!=typeof module?n(exports):"function"==typeof define&&define.amd?define(["exports"],n):n(e.timer={})}(this,function(e){"use strict";function n(){r=m=0,c=1/0,t(u())}function t(e){if(!r){var t=e-Date.now();t>24?c>e&&(m&&clearTimeout(m),m=setTimeout(n,t),c=e):(m&&(m=clearTimeout(m),c=1/0),r=requestAnimationFrame(n))}}function i(e,n,i){i=null==i?Date.now():+i,null!=n&&(i+=+n);var o={callback:e,time:i,flush:!1,next:null};a?a.next=o:f=o,a=o,t(i)}function o(e,n,t){t=null==t?Date.now():+t,null!=n&&(t+=+n),l.callback=e,l.time=t}function u(e){e=null==e?Date.now():+e;var n=l;for(l=f;l;)e>=l.time&&(l.flush=l.callback(e-l.time,e)),l=l.next;l=n,e=1/0;for(var t,i=f;i;)i.flush?i=t?t.next=i.next:f=i.next:(i.time<e&&(e=i.time),i=(t=i).next);return a=t,e}var a,m,r,f,l,c=1/0;e.timer=i,e.timerReplace=o,e.timerFlush=u});
-         var canvas = document.querySelector("canvas");
-             canvas.setAttribute("width", window.innerWidth);
-             canvas.setAttribute("height", window.innerHeight);
-           
-         var    context = canvas.getContext("2d"),
-             width = canvas.width,
-             height = canvas.height,
-             radius = 0.75,
-             minDistance = 4,
-             maxDistance = 60,
-             minDistance2 = minDistance * minDistance,
-             maxDistance2 = maxDistance * maxDistance;
-         var tau = 2 * Math.PI,
-             n = Math.floor((window.innerWidth*window.innerHeight)/2918),
-             particles = new Array(n);
-         for (var i = 0; i < n; ++i) {
-           particles[i] = {
-             x: Math.random() * width,
-             y: Math.random() * height,
-             vx: 0,
-             vy: 0
-           };
-         }
-         timer.timer(function(elapsed) {
-           context.save();
-           context.clearRect(0, 0, width, height);
-           for (var i = 0; i < n; ++i) {
-             var p = particles[i];
-             p.x += p.vx; if (p.x < -maxDistance) p.x += width + maxDistance * 2; else if (p.x > width + maxDistance) p.x -= width + maxDistance * 2;
-             p.y += p.vy; if (p.y < -maxDistance) p.y += height + maxDistance * 2; else if (p.y > height + maxDistance) p.y -= height + maxDistance * 2;
-             p.vx += 0.2 * (Math.random() - .5) - 0.01 * p.vx;
-             p.vy += 0.2 * (Math.random() - .5) - 0.01 * p.vy;
-             context.beginPath();
-             context.arc(p.x, p.y, radius, 0, tau);
-             context.fill();
-           }
-           for (var i = 0; i < n; ++i) {
-             for (var j = i + 1; j < n; ++j) {
-               var pi = particles[i],
-                   pj = particles[j],
-                   dx = pi.x - pj.x,
-                   dy = pi.y - pj.y,
-                   d2 = dx * dx + dy * dy;
-               if (d2 < maxDistance2) {
-                 context.globalAlpha = d2 > minDistance2 ? (maxDistance2 - d2) / (maxDistance2 - minDistance2) : 1;
-                 context.beginPath();
-                 context.moveTo(pi.x, pi.y);
-                 context.lineTo(pj.x, pj.y);
-                 context.stroke();
-               }
-             }
-           }
-           context.restore();
-         });
-      </script>
+      <script src="js/three.min.js"></script>
+      <script src="js/three-obj-loader.js"></script>
+      <script src="js/model-element.min.js"></script>
+      <x-model class="model" src="/path/to/my-model.obj"></x-model>
       <!-- End Background -->
    </head>
    <body>
@@ -107,13 +52,5 @@
          </header>
          <!-- Documents about icons are here: http://fontawesome.io/icons/ -->
       </div>
-      <script>(function(){var d="webkitvisibilitychange",g="_ns";if(window.mobilespeed_jstiming){window.mobilespeed_jstiming.a={};window.mobilespeed_jstiming.b=1;var n=function(b,a,e){var c=b.t[a],f=b.t.start;if(c&&(f||e))return c=b.t[a][0],void 0!=e?f=e:f=f[0],Math.round(c-f)},p=function(b,a,e){var c="";window.mobilespeed_jstiming.srt&&(c+="&srt="+window.mobilespeed_jstiming.srt,delete window.mobilespeed_jstiming.srt);window.mobilespeed_jstiming.pt&&(c+="&tbsrt="+window.mobilespeed_jstiming.pt,delete window.mobilespeed_jstiming.pt);try{window.external&&window.external.tran?
-         c+="&tran="+window.external.tran:window.gtbExternal&&window.gtbExternal.tran?c+="&tran="+window.gtbExternal.tran():window.chrome&&window.chrome.csi&&(c+="&tran="+window.chrome.csi().tran)}catch(v){}var f=window.chrome;if(f&&(f=f.loadTimes)){f().wasFetchedViaSpdy&&(c+="&p=s");if(f().wasNpnNegotiated){var c=c+"&npn=1",h=f().npnNegotiatedProtocol;h&&(c+="&npnv="+(encodeURIComponent||escape)(h))}f().wasAlternateProtocolAvailable&&(c+="&apa=1")}var l=b.t,t=l.start,f=[],h=[],k;for(k in l)if("start"!=k&&
-         0!=k.indexOf("_")){var m=l[k][1];m?l[m]&&h.push(k+"."+n(b,k,l[m][0])):t&&f.push(k+"."+n(b,k))}delete l.start;if(a)for(var q in a)c+="&"+q+"="+a[q];(a=e)||(a="https:"==document.location.protocol?"https://csi.gstatic.com/csi":"http://csi.gstatic.com/csi");return[a,"?v=3","&s="+(window.mobilespeed_jstiming.sn||"mobilespeed")+"&action=",b.name,h.length?"&it="+h.join(","):"",c,"&rt=",f.join(",")].join("")},r=function(b,a,e){b=p(b,a,e);if(!b)return"";a=new Image;var c=window.mobilespeed_jstiming.b++;window.mobilespeed_jstiming.a[c]=
-         a;a.onload=a.onerror=function(){window.mobilespeed_jstiming&&delete window.mobilespeed_jstiming.a[c]};a.src=b;a=null;return b};window.mobilespeed_jstiming.report=function(b,a,e){if("prerender"==document.webkitVisibilityState){var c=!1,f=function(){if(!c){a?a.prerender="1":a={prerender:"1"};var h;"prerender"==document.webkitVisibilityState?h=!1:(r(b,a,e),h=!0);h&&(c=!0,document.removeEventListener(d,f,!1))}};document.addEventListener(d,f,!1);return""}return r(b,a,e)};var u=function(b,a,e,c){return 0<
-         e?(c?b.tick(a,c,e):b.tick(a,"",e),!0):!1};window.mobilespeed_jstiming.getNavTiming=function(b){if(window.performance&&window.performance.timing){var a=window.performance.timing;u(b,"_dns",a.domainLookupStart)&&u(b,"dns_",a.domainLookupEnd,"_dns");u(b,"_con",a.connectStart)&&u(b,"con_",a.connectEnd,"_con");u(b,"_req",a.requestStart)&&u(b,"req_",a.responseStart,"_req");u(b,"_rcv",a.responseStart)&&u(b,"rcv_",a.responseEnd,"_rcv");if(u(b,g,a.navigationStart)){u(b,"ntsrt_",a.responseStart,g);u(b,"nsfs_",
-         a.fetchStart,g);u(b,"nsrs_",a.redirectStart,g);u(b,"nsre_",a.redirectEnd,g);u(b,"nsds_",a.domainLookupStart,g);u(b,"nscs_",a.connectStart,g);u(b,"nsrqs_",a.requestStart,g);var e=!1;try{e=window.external&&window.external.startE}catch(c){}!e&&window.chrome&&window.chrome.csi&&(e=Math.floor(window.chrome.csi().startE));e&&(u(b,"_se",e),u(b,"sens_",a.navigationStart,"_se"));u(b,"ntplt0_",a.loadEventStart,g);u(b,"ntplt1_",a.loadEventEnd,g);window.chrome&&window.chrome.loadTimes&&(a=window.chrome.loadTimes().firstPaintTime)&&
-         u(b,"nsfp_",1E3*a,g)}}}};})();
-      </script><script>(function(){var a=window.mobilespeed_jstiming,b=a.load;window.top==window&&window.addEventListener("load",function(){b.name="load";b.tick("ol");a.getNavTiming(b);setTimeout(function(){a.report(b,{e:"default_policy"})},300)},!1);})();</script>
    </body>
 </html>
