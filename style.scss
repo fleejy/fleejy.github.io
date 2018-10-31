@@ -593,9 +593,15 @@ footer {
 
 // 3D Model
 .model {
-  width: 400px;
-  height: 400px;
-  transform: translateZ(-200px) rotateY(45deg);
+  width: 50vw;
+  height: 50vw;
+  animation: 5s spin linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
