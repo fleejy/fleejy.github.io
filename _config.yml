@@ -1,8 +1,12 @@
 name: Francisco JY Lee
-
-# Short bio or description (displayed in the header)
+# Site settings
+title:
+email:
+author: Francisco JY Lee
 description: Master of Health Informatics student at the University of Toronto
 avatar: /images/favicon-96x96.png
+url: https://fleejy.ca
+
 navigation:
   - name: About
     url: /about
@@ -20,18 +24,15 @@ footer-links:
   linkedin: jae-yong-francisco-lee-0b459013b
 
 
-# Text under the icons in footer
-footer-text: © 2018 Francisco JY Lee
-url: http://fleejy.ca
-
-# Site settings
-title:
-email:
-author:
-description:
-url:
-
 # Build settings
 permalink: :title/
 sass:
   sass_dir: css
+
+# Social icons
+show_social_icons: true
+github_username: fleejy
+
+# plugins
+plugins: [jekyll-paginate]
+paginate: 3
