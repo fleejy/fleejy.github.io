@@ -1,13 +1,9 @@
 ---
+layout: post
 title: "CKME 136 Project"
 tags:
   - health informatics
   - projects
-layout: post
-description: A journal of CKME 136 project journey.
-comments: false
-share: false
-category: projects
 ---
 
 Below is just about everything I did for the CKME 136 project.
