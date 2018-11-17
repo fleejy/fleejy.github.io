@@ -1,15 +1,8 @@
-@@ -3,7 +3,7 @@
-#
-
-# Name of your site (displayed in the header)
-name: Kiko Now
 name: Francisco JY Lee
 
 # Short bio or description (displayed in the header)
 description: Master of Health Informatics student at the University of Toronto
 avatar: /images/favicon-96x96.png
-# and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
-# it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
   - name: Blog
     url: /
@@ -33,14 +26,16 @@ footer-links:
 
 # Text under the icons in footer
 footer-text: © 2018 Francisco JY Lee
+url: http://fleejy.ca
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-@ -64,7 +64,7 @@ google_analytics:
+# Site settings
+title:
+email:
+author:
+description:
+url:
 
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: http://fleejy.github.io
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css
