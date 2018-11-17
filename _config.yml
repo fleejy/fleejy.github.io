@@ -1,55 +1,111 @@
----
-title: fleejy.github.io
-timezone: America/Toronto
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-defaults:
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
+#
+# This file contains configuration flags to customize your site
+#
+
+# Name of your site (displayed in the header)
 name: Francisco JY Lee
-author:
 
-  name: Francisco JY Lee
-  github: fleejy
-  linkedin: jae-yong-francisco-lee-0b459013b
-  email: jaeyongf.lee@mail.utoronto.ca
+# Short bio or description (displayed in the header)
+description: Master of Health Informatics student at the University of Toronto
 
-url: http://www.fleejy.ca
-baseurl: ''
-permalink: "/:year-:month-:day/:title/"
+#
+# Flags below are optional
+#
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: /images/favicon-96x96.png
+
+
+# Tabs in header. There are 'Blog', 'About', 'Archive', 'Tags'
+# and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
+# it from the list(Delete '- name: ' and 'url: ', too!)
+navigation:
+  - name: About
+    url: /about
+  - name: Blog
+    url: /blog
+  - name: Tags
+    url: /tags
+  - name: Projects
+    url: /projects
+  - name: Theme
+    url: https://github.com/AWEEKJ/kiko-now
+
+# Pagination
 paginate: 5
-paginate_path: "/page:num/"
-markdown: kramdown
-kramdown:
-  imput: GFM
-nav:
-- name: About
-  url: "/about"
-- name: Blog
-  url: "/blog"
-- name: Tags
-  url: "/tags"
-- name: Projects
-  url: "/projects"
 
+# Includes an icon in the footer for each username you enter
+footer-links:
+  behance: # https://www.behance.net/<username>
+  dribbble:
+  email:
+  facebook:
+  flickr:
+  github: fleejy
+  googleplus: # anything in your profile username that comes after plus.google.com/
+  instagram:
+  linkedin: jae-yong-francisco-lee-0b459013b
+  pinterest:
+  rss: # just type anything here for a working RSS icon
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  tumblr: # https://<username>.tumblr.com
+  twitter: #
+  youtube: # channel/<your_long_string> or user/<user-name>
+
+# Text under the icons in footer
+footer-text: © 2018 Francisco JY Lee
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus: # <username>.disqus.com
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics:
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+url: http://fleejy.ca
+
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl:
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
+permalink: /:title/
+paginate_path: /page:num/
+
+# The release of Jekyll Now that you're using
+version: v1.2.0
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+# Set the Sass partials directory, as we're using @imports
 sass:
-  sass_dir: _sass
-  style: :compressed
-gems:
-- jekyll-seo-tag
-- jekyll-paginate
+  style: :expanded # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+plugins:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-paginate
+
+# Exclude these files from your production _site
 exclude:
-- vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
