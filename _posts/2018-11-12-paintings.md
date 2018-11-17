@@ -15,18 +15,33 @@ summary: This is about Grandma Moses.
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-50" src="../img/a-beautiful-world-1948.jpg" alt="A Beautiful World, 1948">
+      <div class="carousel-caption d-none d-md-block">
+	    <h5>A Beautiful World, 1948</h5>
+  	  </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-50" src="../img/christmas-at-home.jpg" alt="Christmas At Home">
+      <div class="carousel-caption d-none d-md-block">
+	    <h5>Christmas At Home</h5>
+  	  </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-50" src="../img/plow-boy-1950.jpg" alt="Plow Boy, 1950">
+      <div class="carousel-caption d-none d-md-block">
+	    <h5>Plow Boy, 1950</h5>
+  	  </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-50" src="../img/sugaring-off-1955.jpg" alt="Sugaring Off, 1955">
+      <div class="carousel-caption d-none d-md-block">
+	    <h5>Sugaring Off, 1955</h5>
+  	  </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-50" src="../img/taking-in-the-laundry-1951.jpg" alt="Taking in the Laundry, 1951">
+      <div class="carousel-caption d-none d-md-block">
+	    <h5>Taking in the Laundry, 1951</h5>
+  	  </div>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
