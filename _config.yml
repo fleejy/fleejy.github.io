@@ -32,6 +32,7 @@ sass:
 # Social icons
 show_social_icons: true
 github_username: fleejy
+linkedin_username: jae-yong-francisco-lee-0b459013b
 
 # plugins
 plugins: [jekyll-paginate]
