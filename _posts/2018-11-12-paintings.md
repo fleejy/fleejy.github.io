@@ -3,7 +3,7 @@ layout: post
 title: Who was Grandma Moses?
 summary: This is about Grandma Moses.
 ---
-
+<div class="container">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -37,6 +37,7 @@ summary: This is about Grandma Moses.
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
 </div>
 
 ## Grandma Moses
