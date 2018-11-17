@@ -1,10 +1,14 @@
 ---
-layout: post
 title: One month into Master of Health Informatics
 tags:
   - blog
   - grad school
   - health informatics
+layout: post
+description: grad school
+comments: true
+share: true
+category: blog
 ---
 
 "Health Informatics? What's that?" That was my response when I first heard about the discipline of health informatics 5 years ago.
