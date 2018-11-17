@@ -4,12 +4,8 @@ name: Francisco JY Lee
 description: Master of Health Informatics student at the University of Toronto
 avatar: /images/favicon-96x96.png
 navigation:
-  - name: Blog
-    url: /
   - name: About
     url: /about
-  - name: Archive
-    url: /archive
   - name: Blog
     url: /
   - name: Tags
