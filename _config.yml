@@ -7,18 +7,6 @@ description: Master of Health Informatics student at the University of Toronto
 avatar: /images/favicon-96x96.png
 url: https://fleejy.ca
 
-navigation:
-  - name: About
-    url: /about
-  - name: Blog
-    url: /
-  - name: Tags
-    url: /tags
-  - name: Projects
-    url: /projects
-  - name: Theme
-    url: https://github.com/AWEEKJ/kiko-now
-
 footer-links:
   github: fleejy
   linkedin: jae-yong-francisco-lee-0b459013b
