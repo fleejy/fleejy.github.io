@@ -3,56 +3,44 @@ layout: post
 title: Who was Grandma Moses?
 summary: This is about Grandma Moses.
 ---
-<div class="container">
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-50" src="../img/a-beautiful-world-1948.jpg" alt="A Beautiful World, 1948">
-      <div class="carousel-caption d-none d-md-block">
-	    <h5>A Beautiful World, 1948</h5>
-  	  </div>
+
+<script type="text/javascript">
+  $('#carouselExample').on('slide.bs.carousel', function (e) {
+
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 4;
+    var totalItems = $('.carousel-item').length;
+    
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i
+</script>
+<div class="container-fluid">
+    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+            <div class="carousel-item col-md-3 active">
+                <img class="img-fluid mx-auto d-block" src="../img/a-beautiful-world-1948.jpg" alt="A Beautiful World, 1948">
+            </div>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="../img/plow-boy-1950.jpg" alt="Plow Boy, 1950">
+            </div>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="../img/sugaring-off-1955.jpg" alt="Sugaring Off, 1955">
+            </div>
+            <div class="carousel-item col-md-3">
+                <img class="img-fluid mx-auto d-block" src="../img/taking-in-the-laundry-1951.jpg" alt="Taking in the Laundry, 1951">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left fa-lg text-muted"></i>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+            <i class="fa fa-chevron-right fa-lg text-muted"></i>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-50" src="../img/christmas-at-home.jpg" alt="Christmas At Home">
-      <div class="carousel-caption d-none d-md-block">
-	    <h5>Christmas At Home</h5>
-  	  </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-50" src="../img/plow-boy-1950.jpg" alt="Plow Boy, 1950">
-      <div class="carousel-caption d-none d-md-block">
-	    <h5>Plow Boy, 1950</h5>
-  	  </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-50" src="../img/sugaring-off-1955.jpg" alt="Sugaring Off, 1955">
-      <div class="carousel-caption d-none d-md-block">
-	    <h5>Sugaring Off, 1955</h5>
-  	  </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-50" src="../img/taking-in-the-laundry-1951.jpg" alt="Taking in the Laundry, 1951">
-      <div class="carousel-caption d-none d-md-block">
-	    <h5>Taking in the Laundry, 1951</h5>
-  	  </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 </div>
 
 ## Grandma Moses
