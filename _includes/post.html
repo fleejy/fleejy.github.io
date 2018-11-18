@@ -1,6 +1,6 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function() {
-  $('#carouselExample').on('slide.bs.carousel', function (e) {
+$('#carouselExample').on('slide.bs.carousel', function (e) {
 
     var $e = $(e.relatedTarget);
     var idx = $e.index();
@@ -19,7 +19,6 @@ $(document).ready(function() {
             }
         }
     }
-  })
 });
 </script>
 <div id="post" class="container pt-3">
