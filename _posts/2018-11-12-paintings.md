@@ -5,7 +5,8 @@ summary: This is about Grandma Moses.
 ---
 
 <script type="text/javascript">
-$('#carouselExample').on('slide.bs.carousel', function (e) {
+$(document).ready(function() {
+  $('#carouselExample').on('slide.bs.carousel', function (e) {
 
     var $e = $(e.relatedTarget);
     var idx = $e.index();
@@ -24,6 +25,7 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
             }
         }
     }
+  })
 });
 </script>
 <div class="container-fluid">
