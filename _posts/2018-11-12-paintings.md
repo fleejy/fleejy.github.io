@@ -5,42 +5,34 @@ summary: This is about Grandma Moses.
 ---
 
 <div class="container-fluid">
-    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
-        <div class="carousel-inner row w-100 mx-auto" role="listbox">
-            <div class="carousel-item col-md-3 active">
-                <img class="img-fluid mx-auto d-block" src="../img/a-beautiful-world-1948.jpg" alt="A Beautiful World, 1948">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="../img/plow-boy-1950.jpg" alt="Plow Boy, 1950">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="../img/sugaring-off-1955.jpg" alt="Sugaring Off, 1955">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="../img/taking-in-the-laundry-1951.jpg" alt="Taking in the Laundry, 1951">
-            </div>
-            <div class="carousel-item col-md-3 active">
-                <img class="img-fluid mx-auto d-block" src="../img/christmas-at-home.jpg" alt="Christmas at Home">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="../img/so-long-till-next-year-1960.jpg" alt="So Long Till Next Year, 1960">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="../img/a-blizzard-1956.jpg" alt="A Blizzard, 1956">
-            </div>
-            <div class="carousel-item col-md-3">
-                <img class="img-fluid mx-auto d-block" src="../img/the-burning-of-troy-in-1862-1943.jpg" alt="The Burning of Troy in 1862, 1943">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-            <i class="fa fa-chevron-left fa-lg text-muted"></i>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-            <i class="fa fa-chevron-right fa-lg text-muted"></i>
-            <span class="sr-only">Next</span>
-        </a>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="../img/a-beautiful-world-1948.jpg" alt="A Beautiful World, 1948">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/plow-boy-1950.jpg" alt="Plow Boy, 1950">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/sugaring-off-1955.jpg" alt="Sugaring Off, 1955">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/taking-in-the-laundry-1951.jpg" alt="Taking in the Laundry, 1951">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/christmas-at-home.jpg" alt="Christmas at Home">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/so-long-till-next-year-1960.jpg" alt="So Long Till Next Year, 1960">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/a-blizzard-1956.jpg" alt="A Blizzard, 1956">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="../img/the-burning-of-troy-in-1862-1943.jpg" alt="The Burning of Troy in 1862, 1943">
+      </div>
     </div>
+  </div>
 </div>
 
 ## Grandma Moses
