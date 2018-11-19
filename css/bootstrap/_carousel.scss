@@ -1,6 +1,7 @@
 // Wrapper for the slide container and indicators
 .carousel {
   position: relative;
+  max-height: 
 }
 
 .carousel-inner {
@@ -17,6 +18,11 @@
   @include transition($carousel-transition);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+
+.carousel .item img {
+  max-height: 768px;
+  min-width: auto;
 }
 
 .carousel-item.active,

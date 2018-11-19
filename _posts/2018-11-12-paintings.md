@@ -4,7 +4,7 @@ title: Who was Grandma Moses?
 summary: This is about Grandma Moses.
 ---
 
-<div class="container-fluid">
+<div class="container">
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
