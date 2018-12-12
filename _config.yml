@@ -1,7 +1,7 @@
 name: Francisco JY Lee
 # Site settings
 title:
-email:
+email: franco9505@gmail.com
 author: Francisco JY Lee
 description: Master of Health Informatics student at the University of Toronto
 avatar: /images/favicon-96x96.png
@@ -21,8 +21,7 @@ sass:
 show_social_icons: true
 github_username: fleejy
 linkedin_username: jae-yong-francisco-lee-0b459013b
-google-analytics:
-  id: UA-86783084-2
+google-analytics: UA-86783084-2
 
 # plugins
 plugins: [jekyll-paginate]
